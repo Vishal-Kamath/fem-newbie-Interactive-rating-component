@@ -19,7 +19,7 @@
 <body>
   <div class="container">
     <!-- Rating state start -->
-    <div class="rating-state">
+    <div class="rating-state" style="display: none;">
       <div class="star-image">
         <img src="images/icon-star.svg" alt="" width="14" />
       </div>
@@ -46,13 +46,18 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you-sate" style="display: none;">
-    <!-- You selected out of 5
+    <div class="thank-you-state">
+      <div class="illustration-thank-you">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <div class="rating-display">You selected <span id="rating"></span> out of 5</div> 
 
-    Thank you!
+      <div class="thank-you">Thank you!</div>
 
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch! -->
+      <div class="para">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </div>
     </div>
     <!-- Thank you state end -->
   </div>

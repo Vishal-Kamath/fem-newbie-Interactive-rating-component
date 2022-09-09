@@ -17,7 +17,7 @@
   --fw-bold: 700;
 
   --container-width: 32.5rem;
-  --container-height: 35rem;
+  --container-height: 36rem;
 
   --container-padding: 2rem;
   --container-border-radius: 1.5rem;
@@ -87,7 +87,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  margin: 2.5rem 0;
+  margin: 2.75rem 0;
 }
 
 .button,
@@ -142,8 +142,59 @@ body {
   }
 }
 
+
+:root {
+  --image-height: 10rem;
+  --fs-thank-you: 2.25rem;
+  --rating-margin: 2.5rem;
+}
+
+.thank-you-state {
+  height: 34rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.illustration-thank-you img{
+  height: var(--image-height);
+}
+
+.rating-display {
+  border: 0;
+  border-radius: 2rem;
+
+  background-color: var(--clr-button);
+  color: var(--clr-primary);
+
+  padding: 0.5rem 2rem;
+  margin: var(--rating-margin); 
+  text-align: center;
+}
+
+.thank-you {
+  font-size: var(--fs-thank-you);
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+}
+
+.thank-you-state .para {
+  text-align: center;
+  max-width: 35ch;
+}
+
 .attribution {
   margin: auto 0 1rem 0;
   font-size: 1.6rem;
   font-weight: var(--fw-bold);
+}
+
+@media (min-width: 450px) {
+  :root {
+    --image-height: 10rem;
+    --fs-thank-you: 2.75rem;
+    --rating-margin: 3rem;
+  }
 }
