@@ -108,6 +108,17 @@ body {
   align-items: center;
 }
 
+.button:focus {
+  background-color: var(--clr-neutral-500);
+  color: var(--clr-neutral-100);
+}
+
+.button:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral-100);
+}
+
+
 .submit-button {
   width: 100%;
   height: 4.5rem;
@@ -122,6 +133,11 @@ body {
   font-weight: var(--fw-bold);
   letter-spacing: 0.2rem;
 }
+
+.submit-button:hover {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-primary);
+} 
 
 @media (min-width: 450px) {
   :root {
@@ -185,16 +201,17 @@ body {
   max-width: 35ch;
 }
 
-.attribution {
-  margin: auto 0 1rem 0;
-  font-size: 1.6rem;
-  font-weight: var(--fw-bold);
-}
-
 @media (min-width: 450px) {
   :root {
     --image-height: 10rem;
     --fs-thank-you: 2.75rem;
     --rating-margin: 3rem;
   }
+}
+
+
+.attribution {
+  margin: auto 0 1rem 0;
+  font-size: 1.6rem;
+  font-weight: var(--fw-bold);
 }
