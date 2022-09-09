@@ -19,7 +19,7 @@
 <body>
   <div class="container">
     <!-- Rating state start -->
-    <div class="rating-state">
+    <div class="rating-state" id="rating-state">
       <div class="star-image">
         <img src="images/icon-star.svg" alt="" width="14" />
       </div>
@@ -33,20 +33,20 @@
       </div>
 
       <div class="rating-buttons">
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
+        <button class="button" onclick="selectRating(1)">1</button>
+        <button class="button" onclick="selectRating(2)">2</button>
+        <button class="button" onclick="selectRating(3)">3</button>
+        <button class="button" onclick="selectRating(4)">4</button>
+        <button class="button" onclick="selectRating(5)">5</button>
       </div>
 
-      <button class="submit-button">SUBMIT</button>
+      <button class="submit-button" onclick="changeState()">SUBMIT</button>
       
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you-state" style="display: none;">
+    <div class="thank-you-state" id="thank-you-state" style="display: none;">
       <div class="illustration-thank-you">
         <img src="images/illustration-thank-you.svg" alt="">
       </div>
@@ -64,7 +64,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Vishal-Kamath" target="_blank">Vishal Kamath</a>.
   </div>
 
   <script src="script.js"></script>

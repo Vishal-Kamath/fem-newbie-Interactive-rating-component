@@ -113,11 +113,12 @@ body {
   color: var(--clr-neutral-100);
 }
 
-.button:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-neutral-100);
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-100);
+  }
 }
-
 
 .submit-button {
   width: 100%;
@@ -214,4 +215,5 @@ body {
   margin: auto 0 1rem 0;
   font-size: 1.6rem;
   font-weight: var(--fw-bold);
+  text-align: center;
 }
